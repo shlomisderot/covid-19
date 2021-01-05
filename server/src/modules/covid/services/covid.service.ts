@@ -1,11 +1,9 @@
 import { HttpService, Injectable } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Cat } from './interfaces/covid.interface';
 
 @Injectable()
 export class CovidService {
-  private readonly cats: Cat[] = [];
   private baseApiUrl: string = 'https://covidtracking.com/api/states';
 
   constructor(private http: HttpService) { }

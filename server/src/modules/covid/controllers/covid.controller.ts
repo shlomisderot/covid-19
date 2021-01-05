@@ -1,6 +1,6 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
-import { RolesGuard } from '../../common';
-import { CovidService } from './covid.service';
+import { RolesGuard } from '../../../common';
+import { CovidService } from '../services/covid.service';
 
 
 

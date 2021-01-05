@@ -1,10 +1,10 @@
 import { HttpService, Injectable } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Cat } from './interfaces/covid.interface';
+import { Cat } from '../interfaces/covid.interface';
 
 @Injectable()
-export class CovidService {
+export class StatesService {
   private readonly cats: Cat[] = [];
   private baseApiUrl: string = 'https://covidtracking.com/api/states';
 
@@ -18,6 +18,12 @@ export class CovidService {
 
   getStateDaily(): Observable<any[]> {
     return this.http.get(`${this.baseApiUrl}/daily`).pipe(
+      map(response => response.data)
+    );
+  }
+
+  getInfo(): Observable<any[]> {
+    return this.http.get(`${this.baseApiUrl}/info`).pipe(
       map(response => response.data)
     );
   }

@@ -9,13 +9,6 @@ import { StatesService } from '../services/states.service';
 export class StatesController {
   constructor(private readonly service: StatesService) { }
 
-  @Get('')
-  async getStates() {
-    return this.service.getStates()
-  }
-
-  // https://covidtracking.com/api/states/daily
-
   @Get('daily')
   async getStateDaily() {
     return this.service.getStateDaily()
@@ -24,5 +17,10 @@ export class StatesController {
   @Get('info')
   async getStateInfo() {
     return this.service.getInfo()
+  }
+
+  @Get('')
+  async getStates() {
+    return this.service.getStates()
   }
 }

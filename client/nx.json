@@ -26,9 +26,20 @@
     "covid": {
       "tags": []
     },
-    "covid-e2e": {
-      "tags": [],
-      "implicitDependencies": ["covid"]
+    "matching": {
+      "tags": []
+    },
+    "search": {
+      "tags": []
+    },
+    "state-item": {
+      "tags": []
+    },
+    "state-preview": {
+      "tags": []
+    },
+    "states": {
+      "tags": []
     }
   }
 }

@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule  } from '@angular/common/http'
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './components/app.component';
 import { RouterModule } from '@angular/router';
 
 
+import { MatchingModule } from '@client/matching';
 import { StateItemModule } from '@client/state-item';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
@@ -16,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     HttpClientModule,
     RouterModule.forRoot([], { initialNavigation: 'enabled' }),
     StateItemModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatchingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -13,7 +13,7 @@ export class StateItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.state)
+    
   }
 
 }

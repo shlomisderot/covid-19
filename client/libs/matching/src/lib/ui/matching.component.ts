@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ui-matching',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatchingComponent implements OnInit {
 
+
+  @Input()
+  name: string;
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

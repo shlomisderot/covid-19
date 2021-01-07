@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ui-state-preview',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatePreviewComponent implements OnInit {
 
+  @Input() state: any;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    console.log(this.state)
   }
 
 }

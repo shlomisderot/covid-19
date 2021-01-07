@@ -10,10 +10,21 @@ import { SearchModule } from '@client/search';
 import { StateItemModule } from '@client/state-item';
 import { StatePreviewModule } from '@client/state-preview';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { UIModule } from '@client/ui';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule, MatchingModule, FlexLayoutModule, SearchModule, StateItemModule, StatePreviewModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    MatchingModule,
+    FlexLayoutModule,
+    SearchModule,
+    StateItemModule,
+    StatePreviewModule,
+    BrowserAnimationsModule,
+    UIModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

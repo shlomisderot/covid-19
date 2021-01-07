@@ -1,89 +1,33 @@
-<h2>{{state.name}}</h2>
-<div>death: {{state.death}}</div>
-<div>deathConfirmed: {{state.deathConfirmed}}</div>
-<div>deathIncrease: {{state.deathIncrease}}</div>
-<div>deathProbable: {{state.deathProbable}}</div>
-<div>negative: {{state.negative}}</div>
-<div>negativeIncrease: {{state.negativeIncrease}}</div>
-<div>negativeRegularScore: {{state.negativeRegularScore}}</div>
-<div>negativeTestsAntibody: {{state.negativeTestsAntibody}}</div>
+<u>
+  <h2>{{state.name}}</h2>
+</u>
 
-<!--
-checkTimeEt: "01/03 19:00"
-commercialScore: 0
-dataQualityGrade: "A+"
-date: 20210104
-dateChecked: "2021-01-04T00:00:00Z"
-dateModified: "2021-01-04T00:00:00Z"
-death: 3206
-deathConfirmed: null
-deathIncrease: 23
-deathProbable: null
-fips: "32"
-grade: ""
-hash: "36a79381810ff8f727136350999afdd4874c65c8"
-hospitalized: null
-hospitalizedCumulative: null
-hospitalizedCurrently: 1879
-hospitalizedIncrease: 0
-inIcuCumulative: null
-inIcuCurrently: 423
-lastUpdateEt: "1/4/2021 00:00"
-name: "Nevada"
-negative: 970294
-negativeIncrease: 23032
-negativeRegularScore: 0
-negativeScore: 0
-negativeTestsAntibody: null
-negativeTestsPeopleAntibody: null
-negativeTestsViral: null
-onVentilatorCumulative: null
-onVentilatorCurrently: 268
-pending: null
-posNeg: 1203326
-positive: 233032
-positiveCasesViral: 233032
-positiveIncrease: 1414
-positiveScore: 0
-positiveTestsAntibody: null
-positiveTestsAntigen: null
-positiveTestsPeopleAntibody: null
-positiveTestsPeopleAntigen: null
-positiveTestsViral: null
-probableCases: null
-recovered: null
-score: 0
-state: "NV"
-total: 1203326
-totalTestEncountersViral: 2140442
-totalTestResults: 2140442
-totalTestResultsIncrease: 17649
-totalTestResultsSource: "totalTestEncountersViral"
-totalTestsAntibody: null
-totalTestsAntigen: null
-totalTestsPeopleAntibody: null
-totalTestsPeopleAntigen: null
-totalTestsPeopleViral: 1203326
-totalTestsViral: 1157654
+<div class="d-t">
+  <div class="d-tbody">
+    <div class="d-trow">
+      <div class="d-tcell">Death</div>
+      <div class="d-tcell">Death Confirmed</div>
+      <div class="d-tcell">Death Increase</div>
+      <div class="d-tcell">Death Probable</div>
+      <div class="d-tcell">Negative</div>
+      <div class="d-tcell">Negative Increase</div>
+      <div class="d-tcell">Negative Regular Score</div>
+      <div class="d-tcell">Negative Tests Antibody</div>
+    </div>
+    <div class="d-trow">
+      <div class="d-tcell">{{state.death}}</div>
+      <div class="d-tcell">{{state.deathConfirmed}}</div>
+      <div class="d-tcell">{{state.deathIncrease}}</div>
+      <div class="d-tcell">{{state.deathProbable}}</div>
+      <div class="d-tcell">{{state.negative}}</div>
+      <div class="d-tcell">{{state.negativeIncrease}}</div>
+      <div class="d-tcell">{{state.negativeRegularScore}}</div>
+      <div class="d-tcell">{{state.negativeTestsAntibody}}</div>
+    </div>
+  </div>
+</div>
+<br /><br />
 
-
-
-
-covid19Site: "https://experience.arcgis.com/experience/ece0db09da4d4ca68252c3967aa1e9dd"
-covid19SiteOld: "http://dhhs.ne.gov/Pages/Coronavirus.aspx"
-covid19SiteQuaternary: "https://experience.arcgis.com/experience/ece0db09da4d4ca68252c3967aa1e9dd"
-covid19SiteQuinary: "https://experience.arcgis.com/experience/ece0db09da4d4ca68252c3967aa1e9dd"
-covid19SiteSecondary: "https://gis.ne.gov/enterprise/rest/services/Covid19MapV5/MapServer/11/query?where=1%3D1&outFields=%2A&orderByFields=LAB_REPORT_DATE+desc&resultRecordCount=1&f=json"
-covid19SiteTertiary: "https://experience.arcgis.com/experience/ece0db09da4d4ca68252c3967aa1e9dd"
-covidTrackingProjectPreferredTotalTestField: "totalTestsViral"
-covidTrackingProjectPreferredTotalTestUnits: "Specimens"
-fips: "31"
-name: "Nebraska"
-notes: "Nebraska combines PCR and antigen tests in the total tests figure reported on the state's dashboard, and thus antigen tests are included in our "Total Tests (PCR)" metric. Nebraska's cumulative data values often decrease without explanation, likely due to deduplication or other data corrections.↵↵On January 3, 2021, Nebraska’s **Recovered** value decreased by nearly 4,000 without explanation.↵↵On December 26, 2020, Nebraska’s **Ever hospitalized** decreased by 3, their Recovered decreased by 4265, and their Deaths (confirmed + probable) decreased by 10 without explanation.↵↵On November 13, 2020, Nebraska's cumulative hospitalized count dropped by 21 without explanation.↵↵On November 6, 2020, Nebraska removed 114 recoveries without explanation.↵↵On October 30, 2020, we backfilled the full time series for Nebraska's Total Tests into our "Total Tests (PCR)" metric from a Nebraska GIS query. At the same time, we filled our Positive Tests (PCR) and Negative Tests (PCR) from the same query.↵↵On September 20, 2020, Nebraska started publishing **Total Tests (in specimens)** in addition to **People Tested (in people)**, and we started collecting the Total Tests daily into our Total Tests (PCR) metric.↵↵On November 22, 2020, Nebraska's **Recovered** metric dropped from 56,605 to 16,068 without explanation."
-pui: "All data"
-pum: false
-state: "NE"
-totalTestResultsField: "Total Tests (PCR)"
-twitter: "@NEDHHS"
-
--->
+<a [routerLink]="['/preview', state.state]">
+  Go to {{state.name}} preview
+</a>

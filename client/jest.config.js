@@ -6,5 +6,6 @@ module.exports = {
     '<rootDir>/libs/state-item',
     '<rootDir>/libs/state-preview',
     '<rootDir>/apps/states',
+    '<rootDir>/libs/ui',
   ],
 };

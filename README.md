@@ -9,6 +9,11 @@ In both: `client` and `server` directories you should `npm install` first.
 
 Inside `server` directory just run `npm start`.
 
-In order to run multiple apps inside `client` directory you should run the following commands:<br />
-    - `nx serve covid`
-    * `nx serve states`
+In order to run multiple apps inside `client` directory you should run the following commands:
+* `nx serve covid`
+* `nx serve states`
+
+Alternatively, you can run the local installation of Nx by prepending every command with npm run:
+
+* `npm run nx -- serve covid`
+* `npm run nx -- serve states`

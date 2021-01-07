@@ -1,6 +1,6 @@
-# Full API app with Multiple Angular apps
+# Full RESTFul API (Node app) with multiple Angular clients
 
-A full API app with multiple Angular apps/libs share one packages base (node_modules folder)
+this is a full RESTFul API app implemented in Node.js with multiple clients (Angular apps) share the same packages base (node_modules)
 
 ## Running the code
 The Angular apps use proxy configuration to appleals to the server,

@@ -9,11 +9,11 @@ The possibility of running multiple Angular applications sharing one packages ba
 ## Running the code
 The Angular apps use proxy configuration to appleals to the server,
 
-In both: `client` and `server` directories you should `npm install` first.
+In both: `client` and `server` folders you should run `npm install` first.
 
 Inside `server` directory just run `npm start`.
 
-In order to run multiple apps inside `client` directory you should run the following commands:
+In order to run multiple apps inside `client` folders you should run the following commands:
 * `nx serve covid`
 * `nx serve states`
 

@@ -1,4 +1,4 @@
-# Full RESTFul API (Node app) with multiple Angular clients
+# Monorepo - A RESTFul API (Node app) with multiple Angular clients
 
 This is a full RESTFul API app implemented in Node.js with multiple clients (Angular apps) share the same packages base (node_modules)
 
